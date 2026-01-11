@@ -1,5 +1,5 @@
 {% set name = "pycep-parser" %}
-{% set version = "0.5.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pycep_parser-{{ version }}.tar.gz
-  sha256: 683bb001077c09f98408285b1b6ba10cfb3941610966c45d0638a0e1a5e1d2a4
+  sha256: ff61a68f2fdc052206a3db16e6b398790822dd20aaa8e7b4cc3e632f67c3eec8
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
